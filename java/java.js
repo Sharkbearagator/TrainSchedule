@@ -58,7 +58,7 @@ $("#add-train-btn").on("click", function(event) {
 });
 
 // event for adding trains to the database and a row in the table
-trains.ref().on("child_added", function(childSnapshot, prevChildKey) {
+trains.ref().on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val());
 
   // Store everything into a variable.
